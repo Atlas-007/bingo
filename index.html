@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title> Year Bingo</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+<h1> Year Bingo</h1>
+<div class="controls">
+<button id="newBoard">New 5×5</button>
+<button id="randomize" class="ghost">Randomize from list</button>
+<button id="export" class="ghost">Export JSON</button>
+<button id="import" class="ghost">Import JSON</button>
+<button id="share" class="ghost">Share (URL)</button>
+<button id="reset" class="ghost">Reset</button>
+</div>
+</header>
+
+
+<section class="board-wrap" aria-label="bingo board">
+<div id="board" class="board" role="grid"></div>
+<div class="footer">Click a cell to edit it. Use the checkbox to mark completed. State is saved locally. You can export/import or create a shareable link.</div>
+</section>
+
+
+<!-- Modal for editing -->
+<div id="modal" class="modal" aria-hidden="true">
+<div class="card">
+<h3 id="modalTitle">Edit cell</h3>
+<label>Goal text</label>
+<input id="goalText" type="text" placeholder="e.g. Get a driver's license">
+<label>Emoji or small image URL (optional)</label>
+<input id="goalImage" type="text" placeholder="Emoji like 🏆 or https://...png">
+<div class="row">
+<button id="saveCell">Save</button>
+<button id="cancel" class="ghost">Cancel</button>
+<button id="clearCell" class="ghost">Clear</button>
+</div>
+<hr style="opacity:.06;margin:12px 0">
+<label>Quick-fill list (one per line)</label>
+<textarea id="quickList" rows="4" placeholder="Put goals here, each in a separate line and click Randomize"></textarea>
+<div style="display:flex;gap:8px;margin-top:8px">
+<button id="applyQuick" class="ghost small">Apply as board items (fills empty)</button>
+<button id="randomFill" class="small">Randomize board from list</button>
+</div>
+</div>
+</div>
+
+
+<!-- hidden textarea for import/export -->
+<textarea id="jsonArea" style="position:fixed;left:-9999px;top:-9999px"></textarea>
+
+
+<script src="js/app.js"></script>
+</body>
+</html>
