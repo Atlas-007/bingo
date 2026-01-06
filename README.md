@@ -33,7 +33,7 @@ By turning your goals into a board, you’re more likely to **stay engaged and c
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/yourusername/year-bingo-2026.git
+git clone https://github.com/yourusername/bingo.git
 
 
 
