@@ -4,7 +4,7 @@ A customizable, editable bingo board for setting and tracking personal goals for
 Built with **HTML**, **CSS**, and **JavaScript**. Works fully in the browser — no backend required.
 
 
-## 🎲 Why a Bingo Card?
+## Why a Bingo Card?
 
 A traditional New Year’s resolution list often falls flat — you get busy, forget, or lose motivation.  
 
@@ -18,7 +18,7 @@ By turning your goals into a board, you’re more likely to **stay engaged and c
 
 ---
 
-## 🎯 Features
+## Features
 
 - **Editable Board** – Click any cell to edit your goal text or add an emoji/image.
 - **Mark Completed** – Use the checkbox to mark a goal as done.
@@ -29,7 +29,7 @@ By turning your goals into a board, you’re more likely to **stay engaged and c
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 1. **Clone the repository:**
 ```bash
